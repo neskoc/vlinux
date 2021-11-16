@@ -1,0 +1,2411 @@
+
+[0;30;42m>>> ======= GUI Inspect               =======[0m
+tor 15 apr 2021 14:47:45 CEST
+vlinux kmom06 abra19
+docker
+Inspect GUI v2.5.1 (2020-11-30)
+
+[0;30;42m>>> ======= Pre kmom06                =======[0m
+>>> -------------- Pre (all kmoms) ----------------------
+http://www.student.bth.se/~abra19/dbwebb-kurser/vlinux/me/redovisa
+
+[36m
+View docker-compose? (look for :loop tag) [Y/n] (B[0m
+[36m
+Execute docker-compose up -d server? [Y/n] (B[0m
+[36m
+Execute docker-compose run client? [Y/n] (B[0m
+[36m
+Execute docker-compose down? [Y/n] (B[0m
+
+[0;30;42m>>> ======= dbwebb inspect            =======[0m
+Do dbwebb inspect in the background and write output to logfile.
+
+[0;30;42m>>> ======= Docker run scripts        =======[0m
+docker-compose -f docker-compose.yaml run --service-ports server bash .dbwebb/inspect-src/kmom.d/run.bash kmom06 abra19 .log/inspect/docker.txt
+Creating vlinux_server_run ... 
+[1A[2KCreating vlinux_server_run ... [32mdone[0m[1B
+[32;01m>>> -------------- Start                -------------------------[0m
+Running scripts in '/home/dbwebb/repo/.dbwebb/inspect-src/kmom.d/kmom06'.
+
+[32;01m>>> -------------- 10_awk-files.bash    -------------------------[0m
+[abra19] Check for awkfiles
+/home/dbwebb/repo/.dbwebb/inspect-src/kmom.d/kmom06/10_awk-files.bash: line 18: printerror: command not found
+total 120
+drwxrwxr-x 2 dbwebb dbwebb  4096 Apr 14 11:44 .
+drwxrwxrwx 5 dbwebb dbwebb  4096 Apr 14 11:42 ..
+-rw-rw-r-- 1 dbwebb dbwebb    84 Apr 14 11:42 1.awk
+-rw-rw-r-- 1 dbwebb dbwebb   522 Apr 14 11:42 10
+-rw-rw-r-- 1 dbwebb dbwebb   100 Apr 14 11:42 2.awk
+-rw-rw-r-- 1 dbwebb dbwebb   102 Apr 14 11:42 3.awk
+-rw-rw-r-- 1 dbwebb dbwebb   314 Apr 14 11:42 4.awk
+-rw-rw-r-- 1 dbwebb dbwebb   337 Apr 15 08:11 5.awk
+-rw-rw-r-- 1 dbwebb dbwebb   426 Apr 14 11:42 6.awk
+-rw-rw-r-- 1 dbwebb dbwebb   325 Apr 14 11:42 7.awk
+-rw-rw-r-- 1 dbwebb dbwebb   206 Apr 14 11:42 8.awk
+-rw-rw-r-- 1 dbwebb dbwebb   400 Apr 14 11:42 9.awk
+-rw-r--r-- 1 root   root   73602 Apr 15 12:47 awk_names.csv
+[0;37;41mFAILED[0m 10_awk-files.bash
+
+[32;01m>>> -------------- 20_check-awk.bash    -------------------------[0m
+[abra19] Check awk exercise 1.awk 
+Salma Helin
+Sanna Wahlgren
+Anni Örn
+Thilda Brandt
+Alexis Sjödin
+Madicken Berg
+Ingemar Kihlström
+Patricia Sjöö
+Anton Johnson
+Rosanna Sjösten
+Roland Wennerström
+Zacharias Ferm
+Camilla Mikaelsson
+Carla Nordstrand
+Andrea Hallin
+Leia Bark
+Rickard Källman
+Thelma Sunesson
+Nikki Landström
+Eira Ivarsson
+Noor Hallberg
+Severin Holmlund
+Erza Dahlén
+Svante Hammarberg
+Rawan Vallgren
+Amna Strid
+Lillie Gren
+Markus Wendel
+Fatima Rask
+Hugo Stoltz
+Hillevi Svensk
+Fiona Birgersson
+Wilja Almgren
+Justus Thelin
+Dag Damberg
+Lorin Wall
+Wendela Algotsson
+Jessie Fernström
+Rania Borg
+Teo Stenström
+Alexia Mörk
+Valfrid Hultqvist
+Zeinab Wahlberg
+Jana Olsén
+Gert Engberg
+Liam Fagerberg
+Minnah Franzén
+Jana Olausson
+Tore Nylén
+Jörgen Sturesson
+Dilan Vestergren
+Esra Holmstedt
+Mirjam Lundstedt
+Dilan Sjöholm
+Aaron Hagberg
+Elin Danielsson
+Marvin Norling
+Chloe Zackrisson
+Camilla Ekberg
+Rahma Sundelin
+Manne Hallman
+Sixten Meijer
+Meya Ahlberg
+Emmelie Kvist
+Arthur Öhrn
+Severin Hedman
+Grim Kempe
+Joy Strömgren
+Lova Lundquist
+Daniel Filipsson
+Emil Schmidt
+Louise Lindroth
+Lovisa Carlström
+Thelma Mattiasson
+Zahra Hällström
+Filippa Kroon
+Stina Örn
+Melissa Wickström
+Novalee Sjöstrand
+Tintin Bergmark
+Nellie Gunnarsson
+Indra Sörensson
+Maryam Carlson
+Telma Bondesson
+Maria Grip
+Frej Asplund
+Fanny Hemmingsson
+Ofelia Sandell
+Amelia Hall
+Atle Granberg
+Amelie Nordlund
+Volmar Wiberg
+Freja Fahlén
+Adnan Lilja
+Whilma Bergendahl
+Ingemund Edvinsson
+Jill Edlund
+Iris Rönnberg
+Jonna Östlund
+Amos Malmqvist
+Zeynep Thorsell
+Sigge Ekström
+Emelie Liljekvist
+Gerda Brink
+Hadi Wickström
+Aina Norlander
+Fredrik Sjöö
+Emmy Dahlman
+Haylie Palm
+Henric Leander
+Jennifer Bergh
+Lava Norlander
+Wiktor Hammarlund
+Tara Valfridsson
+Erland Norström
+Claes Tillman
+Dahlia Stridh
+Sören Wahlgren
+Manda Lans
+Natanael Brännström
+Göran Månsson
+Eline Stenman
+Halvard Edvardsson
+Adele Vidén
+Samuel Örn
+Jörgen Kristoffersson
+Lennart Ryberg
+Tess Almström
+Emy Larsen
+Kenny Edström
+Chanelle Lundahl
+Bernhard Winberg
+Ninni Fast
+Ludwig Söderström
+Noelia Bergdahl
+Enzo Thorsson
+Elmedina Olausson
+Moa Henriksson
+Hilda Backlund
+Isak Grönberg
+Mio Gabrielsson
+Osvald Wickström
+Atle Brännström
+Arvid Nordahl
+Lars Brändström
+Liam Rönnbäck
+Tintin Flink
+Belinda Nordin
+Sarah Ahlberg
+Leonie Månsson
+Kristina Åstrand
+Elena Olsén
+Zacharias Bergendahl
+Amos Edgren
+Joakim Svedlund
+Evelin Bäckström
+Agnes Elfström
+Nadin Hall
+Liam Bodin
+Izabelle Norberg
+Helga Lagerström
+Bob Öhrn
+Wera Wiman
+Rawan Ekvall
+Harry Mattiasson
+Mustafa Rosengren
+Laura Öhlin
+Hassan Welin
+Ester Haglund
+Erhard Vernersson
+Whilma Burman
+Marina Wallgren
+Moa Selander
+Jenna Bernhardsson
+Wendela Berggren
+Villemo Wallman
+Mio Hällgren
+Hassan Hultberg
+Marvin Sjölin
+Vendela Rosenkvist
+Maj Sjöstrand
+Salomon Thomasson
+Dima Renberg
+Elisia Malmborg
+Beatrice Fredin
+Alfons Näsström
+Karla Björn
+Erik Nyqvist
+Lukas Lindström
+Vidar Nordin
+Aaron Klaesson
+Hanna Malmkvist
+Nelia Vestin
+Nova-Li Löfdahl
+Rolf Rönn
+Tore Robertsson
+Laura Ljungkvist
+Madicken Bergkvist
+Alexandra Hermansson
+Azra Edman
+Esbjörn Westin
+Avin Persson
+Susanna Wirén
+Greta Kjellin
+Christina Vikman
+Greta Fogelberg
+Arnold Wennberg
+Sumaya Ingvarsson
+Minelle Björn
+Milla Hammarström
+Lavin Öberg
+Eva Lindfors
+Anders Stoltz
+Jill Lindblad
+Othilia Thor
+Odin Kristiansson
+Heidi Karlén
+Marielle Östlund
+Botvid Christensen
+Malva Vikström
+Amina Hallgren
+Jasmina Rosell
+Alrik Palmqvist
+Joseph Långström
+Denise Högström
+Tor Liljekvist
+Samir Sjökvist
+Caroline Haraldsson
+Lars Bergmark
+Petronella Christiansson
+Narin Vesterlund
+Andrea Lundbäck
+Scott Ragnarsson
+Tibirtus Hjorth
+Elmer Frank
+Jimmy Helmersson
+Örjan Thunberg
+Emy Vestberg
+Miranda Appelqvist
+Havanna Åkesson
+Isadora Grahn
+Raoul Lindman
+Fannie Sjöstedt
+Maximiliam Ahlstrand
+Ayla Grönlund
+Heidi Cederlund
+Sebastian Strömberg
+Salomon Blomkvist
+Scott Rutgersson
+Sally Rundberg
+Kristoffer Sjöö
+Lily Lif
+Joline Fagerlund
+Veronika Stålnacke
+Andreas Fahlström
+Boris Sandahl
+Mirjam Norrman
+Elwin Lorentzon
+Maria Sköld
+Ilse Appelgren
+Josephine Edberg
+Elwin Ludvigsson
+Nathalie Bergvall
+Amira Vennberg
+Meya Wennberg
+Matteus Blomkvist
+Fatma Gren
+Jonas Lind
+Sigge Skoglund
+Kasper Stridh
+Rawan Vigren
+Agnes Stenmark
+Göran Wallén
+Helena Nystedt
+Loke Hällgren
+Klara Bohman
+Styrbjörn Jarl
+Caspar Roos
+Valle Blomgren
+Rut Österlund
+Fanny Kihlström
+Klas Mellberg
+Carmen Lindström
+Lukas Sander
+Alisa Gradin
+Rune Hellberg
+Nathaniel Bergendahl
+Noelia Englund
+Nikolaus Nyrén
+Charlie Melander
+Samantha Olsén
+Dana Rydén
+Erza Folkesson
+Zoe Westberg
+Savannah Sjölin
+Joanna Kjellström
+Ali Lindroth
+Madelene Rasmusson
+Amadeus Rundqvist
+Anton Törnkvist
+Joseph Leandersson
+Melody Niklasson
+Sabina Antonsson
+Celine Nylén
+Lin Källgren
+Finn Lundholm
+Belle Bengtsson
+Clara Öst
+Deniz Ljungström
+Matthias Lundgren
+Rahaf Fredriksson
+Belle Åström
+Adèle Morén
+Lucas Robertsson
+Ella Von
+Emina Kjellman
+Sandra Gillberg
+Enya Jörgensen
+Nilo Widén
+Krister Lindblad
+Tor Lundbäck
+Valfrid Norling
+Sigurd Qvist
+Emir Sjöberg
+Ella Johansson
+Ossian Dahlin
+Joachim Olausson
+Tage Rosenqvist
+Evelina Rydell
+Manfred Näsström
+Alessia Edvardsson
+Arthur Ringdahl
+Melek Bogren
+Vega Brorsson
+Sanja Appelgren
+Sigurd Sörensson
+Ivan Fredin
+Tilda Ågren
+Liza Ledin
+Josef Holmqvist
+Michaela Tell
+Mia Bohman
+Rolf Åkesson
+Lilith Hedén
+Sonia Hedén
+Aprilia Cederholm
+Gottfrid Lantz
+Louisa Hellgren
+Liana Kristiansson
+Vilhelm Österlund
+Konrad Långström
+Milou Landin
+Viking Vilhelmsson
+Emeli Sterner
+Malte Back
+Aylin Halvarsson
+Nova-Li Lundholm
+Leyla Öström
+Sabina Söderkvist
+Jasper Dahlberg
+Dan Landin
+Ingvar Hemmingsson
+Pauline Österman
+Reinhold Stefansson
+Abbe Bohlin
+Sophie Ahlgren
+Gottfrid Brundin
+Nanna Ragnarsson
+Pål Jarl
+Teresia Högman
+Lorena Månsson
+Caspar Norling
+Georg Thuresson
+Aston Oscarsson
+Helmer Lindberg
+Idun Wallberg
+Chloe Söderlund
+Veronica Sörman
+Emilija Almgren
+Luna Edberg
+Ingemar Nyman
+Nadia Hedström
+Edvard Enqvist
+Knut Nylén
+Staffan Lif
+Herman Sunesson
+Åsa Holmlund
+Douglas Bengtsson
+Tino Evertsson
+Karolina Blomqvist
+Sivert Kvarnström
+Evald Jakobsson
+Sara Sander
+Arwen Mattsson
+Henning Söderman
+Edit Thorén
+Oskar Lif
+Smilla Björn
+Lykke Ersson
+Denniz Zetterlund
+Savannah Kroon
+Linus Hedman
+Karim Bergvall
+Vidar Lovén
+Angelica Hultman
+Set Holmén
+Hailie Zander
+Betty Östberg
+Gottfrid Lagerqvist
+River Olausson
+Molly Stål
+Anja Bolin
+Roxanna Fridlund
+Jolina Söderlund
+Aram Björck
+Ruben Blomdahl
+Manfred Hedblom
+Åsa Hansson
+Alvar Gillberg
+Elna Blomgren
+Anas Tillman
+Ronny Berglund
+Emina Wallgren
+Natali Hilmersson
+Lydia Stenman
+Lou Nyström
+Blenda Hellberg
+Leo Kling
+Emmelie Einarsson
+Linda Schröder
+Nemi Jernberg
+Noak Davidsson
+Tora Björkman
+Christopher Svenningsson
+Wendela Rundberg
+Tanja Eskilsson
+Tina Hamrin
+Deniz Ekman
+Theodore Fritz
+Vanna Kihlberg
+Anselm Glans
+Luka Göransson
+Fatma Harrysson
+Leon Åkerberg
+Hilding Samuelsson
+Ingrid Oskarsson
+Elmedina Sandberg
+James Sjölin
+Amina Olausson
+Ibrahim Cederberg
+Lorin Ståhl
+Heidi Sjöö
+Ruth Dahlström
+Dilan Kjellgren
+Benin Forsgren
+Roger Back
+Elwira Thor
+Linnea Hultqvist
+Rayan Appelqvist
+Brian Ahlberg
+Alve Torstensson
+Mats Schmidt
+Hana Kjellgren
+Miro Enqvist
+Lars Söderlund
+Jens Oskarsson
+Ofelia Gran
+Brynolf Rasmussen
+Vidar Gustavsson
+Belinda Rönnberg
+Emely Blomdahl
+Zelda Granström
+Ebba Ryd
+Vendela Carlsson
+Miro Åslund
+Alisa Hägg
+Samira Hård
+Maksim Sten
+Agnes Granath
+Willy Lindmark
+Gottfrid Öqvist
+Noah Sandell
+Hillevi Hallgren
+Lorin Skoog
+Hailey Wedin
+Lillemor Wikman
+Hjalmar Göransson
+Hemming Kjellström
+Judit Rönn
+Claes Krantz
+Eila Sjökvist
+Ajla Enqvist
+Marlon Ålund
+Isadora Carlén
+Emmi Holmlund
+Bertil Åhman
+Sonia Edström
+Beata Helgesson
+Celia Sandahl
+Junia Brodén
+Esaias Falk
+Evin Holmström
+Chanel Bratt
+Jessika Niemi
+Cindy Bergqvist
+Helen Lövgren
+Charlotta Forsström
+Emin Wik
+Adriana Rosell
+Emilija Frisk
+Mirella Sjödahl
+Nour Nordlander
+Agaton Hammarström
+Dania Fritz
+Madelen Ekholm
+Leija Ringström
+Emilija Broström
+Isak Nylander
+Athena Kihlström
+Amelia Frid
+Mostafa Stridh
+Didrik Bodén
+Liv Molin
+Nikolina Dahl
+Ivan Johannisson
+Mostafa Sahlström
+Amie Åkerlund
+Pär Sonesson
+Walter Bergström
+Malek Jörgensen
+Olof Holmlund
+Daisy Brandt
+Joachim Petersson
+Filiph Thörn
+Edith Almgren
+Ayla Bergstrand
+Xander Svensson
+Elisa Sahlin
+Jacob Roslund
+Rafael Peterson
+Fredric Hamrin
+Glenn Krantz
+Bjarne Mattiasson
+Niclas Lundahl
+Marlon Forsell
+Tintin Grönqvist
+Ludwig Qvarnström
+Tilly Sundgren
+Julie Lif
+Ingemar Hägg
+Carl Nylén
+Christofer Sandqvist
+Hampus Kling
+Sebastian Öqvist
+Jolene Hällgren
+Chris Medin
+Tryggve Molander
+Doris Zetterström
+Andrea Norling
+Stefan Rosell
+Sandra Andersen
+Cornelia Åhs
+Tuwa Ljung
+Ida Carlström
+Dan Tillberg
+Lillemor Halldén
+Avin Åslund
+Isolde Hellgren
+Germund Östberg
+Beata Åkerman
+Natasha Landén
+Göran Juhlin
+Mika Mårtensson
+Roxanna Jönsson
+Sigge Lönnberg
+Jon Pihl
+Lillian Lindman
+Tania Lundvall
+Nikolaj Vilhelmsson
+Fabian Svensson
+Malek Lantz
+Adriana Sjölund
+Juliette Bergström
+Kalle Andersson
+Alf Dahlqvist
+Kendra Bergendahl
+Karla Rosenberg
+Sanna Wallman
+Rebecca Ehn
+Embla Boman
+Tea Kristiansson
+Johnny Törnblom
+Elena Mellberg
+Thor Hedström
+Kayla Holmstedt
+Samuel Örn
+Kajsa Bäck
+Hassan Vahlberg
+Idun Forss
+Adèle Boström
+Alicia Westin
+Ines Henningsson
+Eli Rodin
+Leopold Sundén
+Stephanie Kristoffersson
+Sabrina Wickman
+Maximillian Törnkvist
+Christopher Leijon
+Cornelius Hellman
+Emilia Nyman
+Gabriel Sörensen
+Helin Westerlund
+Destiny Ahlberg
+Dina Westin
+Esma Wirén
+Natanael Kihlberg
+Zahraa Lindman
+Eila Zackrisson
+Edwin Häggström
+Isolde Sterner
+Carolina Hultman
+Jasmina Sundman
+Joar Hugosson
+Disa Bladh
+Edit Henriksson
+Aina Josefsson
+Rosa Håkansson
+Jan Aronsson
+Ayla Lindgren
+Veronika Åkerlund
+Hulda Lundén
+Harald Lövgren
+Arnulf Edvardsson
+Pål Olausson
+Bartolomeus Kjell
+Zeinab Viberg
+Leija Sahlström
+Hanna Lagergren
+Milly Hedqvist
+Hakon Granath
+Yrsa Engberg
+Berfin Gren
+Tina Kruse
+Sara Blomdahl
+Nikki Lindblad
+Cornelius Sundberg
+Ina Sander
+Fanny Kraft
+Alexis Larsson
+Julie Tillman
+Jonas Fagerberg
+Erik Lönn
+Kaj Glans
+Kaspar Sköld
+Edvin Källberg
+Ellis Granath
+Douglas Nyman
+Alida Edström
+Noelia Wallén
+Liva Sjödin
+Östen Johannesson
+Miran Östman
+Majken Rehn
+Carmen Wahlqvist
+Tamara Blomberg
+Alisa Wallman
+Kristina Christensen
+Ricky Frid
+Angelika Vikström
+Sven Malm
+Kian Bohlin
+Krister Fröberg
+Judith Abrahamsson
+Charlie Mellgren
+Andreas Adamsson
+Lillemor Ludvigsson
+Roland Thelin
+Arnulf Hellström
+Tore Östling
+Philip Selberg
+Andreas Grönlund
+Nils Dahlström
+Gudmar Helander
+Fredrik Bohman
+Seth Trygg
+Alex Schröder
+Blanka Hedén
+Nejla Thuresson
+Holger Sahlström
+River Ahl
+Ilma Thörn
+Mats Wennerström
+Tibirtus Edvinsson
+Liana Karlsson
+Nick Wallberg
+Elisia Kämpe
+Titus Vikberg
+My Kron
+Valle Linder
+Vendela Ericsson
+Matilde Linde
+Ronny Ljungberg
+Lina Åstrand
+Nicolai Wennerberg
+Allie Käck
+Vendela Rydström
+Lana Sjödahl
+Henric Ragnarsson
+Conrad Klang
+Loa Lagergren
+Stellan Friberg
+Nelly Klaesson
+Joline Olsen
+Alrik Hammarlund
+Torvald Hällgren
+Nadine Petersen
+Lex Hjort
+Marta Hagberg
+Matteo Lif
+Valeria Westergren
+Amos Sterner
+Leila Björnberg
+Ellie Söderberg
+Celia Bergkvist
+Maximus Vahlberg
+Azra Linde
+Alma Kron
+Leon Lindmark
+Nicolas Johannesson
+Uma Sjögren
+Agaton Van
+Vilda Filipsson
+Atle Sigfridsson
+Muhammad Björling
+Emre Hjorth
+Lucas Schröder
+Patricia Almgren
+Seth Hamrin
+Blanka Ringdahl
+Gry Ulander
+Harry Schröder
+Ture Erlandsson
+Manfred Malmros
+Leon Westberg
+Rojin Glans
+Telma Björn
+Sienna Niemi
+Elma Westlund
+Milton Carlberg
+David Hallman
+Greger Seger
+Ove Norberg
+Joel Törnkvist
+Agaton Hellberg
+Rosa Vennberg
+Alma Edin
+Thilda Sörensson
+Hector Renberg
+Olga Bergkvist
+Reinhold Svanberg
+Miliam Falck
+Amelie Halldén
+Cleo Gerdin
+Lavin Jarl
+Ernst Lidberg
+Adina Nelson
+Lillie Einarsson
+Winston Beckman
+Elias Enström
+Nelly Brännström
+Marielle Esbjörnsson
+Amie Vikström
+Amelie Sahlström
+Sumaya Mellgren
+Ted Sjöstedt
+Colin Jarl
+Alvin Gabrielsson
+Roy Grönlund
+Olaus Fält
+Johannes Sundström
+Amos Ljung
+Isabelle Vesterberg
+Elvis Andrén
+Waldemar Selberg
+Brynolf Fredin
+Mia Sjöö
+Kjell Ahlin
+Eskil Wallén
+Bjarne Rosenberg
+Ally Fast
+Emilija Bodin
+Amel Nielsen
+Kristin Engvall
+Adriano Fröjd
+Alrik Ström
+Filiph Hägg
+Angela Flink
+Sakarias Engström
+Elliot Vikman
+Romeo Westling
+Selina Rosendahl
+Lennox Tjernström
+Nemi Svedberg
+Veronika Sandgren
+Juni Åhlén
+Lowa Källman
+Towa Ahl
+Bertil Lagerström
+Malek Morén
+Ella Jansson
+Kim Albertsson
+Hillevi Bogren
+Esbjörn Vestling
+Niki Melin
+Liana Rosenkvist
+Isabell Edgren
+Gabriella Sundelin
+Björn Vallin
+Lisen Rosén
+Amy Boberg
+Elsie Sandgren
+Thelise Sandqvist
+Samantha Lindén
+Arve Petersson
+Theodore Stenqvist
+Kristin Sjölin
+Hanan Staaf
+Miley Rosander
+Dilara Sahlin
+Annie Lindblad
+Hoda Berglund
+Marika Sjöberg
+Isadora Ålund
+Jana Haraldsson
+Zanna Sjöstedt
+My André
+Melvin Sundkvist
+Samira Hultman
+Veronika Robertsson
+Jessie Hjelm
+Romeo Fritz
+Thilde Vernersson
+Sakarias Sjögren
+Kevin Elg
+Magnus Nordh
+Ängla Selberg
+Elna Helander
+Elise Wallman
+Wilma Vikman
+Frej Östergren
+Gabrielle Löfstedt
+Aisha Vestman
+Emre Rönnberg
+Abdullah Häggström
+Marion Mårtensson
+Ema Levin
+Ted Isaksson
+Noa Henning
+Pär Bark
+Philippa Isaksson
+Angelina Malmkvist
+Emilie Sörensen
+Cornelius Håkansson
+Joseph Andersen
+Thilde Fält
+Donia Hedström
+Valeria Andersson
+Ninja Sjödin
+Kimberly Zetterberg
+Muhammed Norberg
+Nikolaj Norrman
+Nathanael Blomkvist
+Nelli Christensen
+Unni Molander
+Daniel Kjellin
+Celina Asp
+Natali Flodin
+Jonas Hedberg
+Sigge Ljungberg
+Julie Lundkvist
+Brian Landén
+Christine Brundin
+Rut Burman
+Flora Nyrén
+Mustafa Nykvist
+Ida Gren
+Yasmine Henningsson
+Angelina Sundell
+Jim Nordstrand
+Felicia Wennström
+Juli Hamrin
+Joanna Jonsson
+Norah Bergsten
+Dilara Modig
+Teresia Thorsson
+Noa Stenvall
+Ester Ehn
+Sixten Högström
+Elise Olausson
+Ilse Lager
+Zandra Säfström
+Filippa Malmström
+Sanna Lindman
+Haley Wallman
+Marvin Bergqvist
+Bodil Carlson
+Gabrielle Hellsten
+Rahaf Meijer
+Vilda Zachrisson
+Terese Norrman
+Blanka Fredin
+Joseph Bogren
+Jessika Edberg
+Fanny Stolt
+Håkan Nordstrand
+David Lager
+Nanna Mossberg
+Mimmi Roos
+Arne Arnesson
+Milia Adamsson
+Nils Hägglund
+Millie Hjelm
+Haley Liljedahl
+Carla Johnsson
+Therese Rosander
+Egil Lindmark
+Ajla Carlström
+Erica Hellman
+Meija Ask
+Ragnar Bäck
+Helga Hörberg
+Dennis Vikström
+Karolina Backlund
+Marta Rosander
+Elisia Hellberg
+Mimmi Frick
+Rosanna Stark
+Leya Lundström
+Izabell Adolfsson
+Hadi Nordvall
+Ville Müller
+Malcolm Ros
+Gösta Källström
+Lea Lindstedt
+Vilhelmina Hellman
+Lorentz Ljungdahl
+Alma Modin
+Alida Steen
+Lucia Krantz
+Börje Helmersson
+Jimmie Rosberg
+Sigge Vestling
+Fritz Liljekvist
+Roxanna Stålberg
+Matthias Kruse
+Sandy Hellberg
+Israel Staaf
+Estelle Ask
+Noa Thunberg
+Miran Näslund
+Cindy Stefansson
+Joni Söderholm
+Evelin Rosvall
+Elli Lans
+Kira Rasmussen
+Rayan Johansen
+Vera Hellberg
+Kalle Gradin
+Alvar Knutsson
+Freyja Nygren
+Carolina Forsmark
+Valencia Hedvall
+Sanna Petersson
+Morgan Bohlin
+Hoda Sundén
+Alexsandra Lindén
+Lowa Zetterlund
+Botvid Berglund
+Manuel Rosberg
+Donya Wihlborg
+Morgan Lagerström
+Kiara Berggren
+Noak Lidman
+Vilja Nordstrand
+Maryam Hjort
+Lycka Ljungström
+Zara Sigfridsson
+Stina Rahm
+Svante Ramberg
+Lex Modin
+Danny Åhlander
+Isabel Berglin
+Ingemar Sandell
+Joseph Björling
+Linnea Nordvall
+Dania Johansson
+Petter Bruhn
+Alvar Kristensson
+Filippa Gidlund
+Jens Åkerström
+[36m===============
+Format: <firstname> <lastname>
+Rows: 1000 (1000)
+Extra: No extra.
+The last 5 should be: Dania Johansson, Petter Bruhn, Alvar Kristensson, Filippa Gidlund, Jens Åkerström
+(B[0mView script? [y/N] 
+[abra19] Check awk exercise 2.awk 
+Salma Helin, Hällaryd
+Sanna Wahlgren, Torhamn
+Anni Örn, Resarö
+Thilda Brandt, Holmsjö
+Alexis Sjödin, Ardala
+Madicken Berg, Grimsås
+Ingemar Kihlström, Katrinedal
+Patricia Sjöö, Timmele
+Anton Johnson, Furuby
+Rosanna Sjösten, Gårdby
+Roland Wennerström, Västra Torup
+Zacharias Ferm, Klövsjö
+Camilla Mikaelsson, Mogata
+Carla Nordstrand, Skölsta
+Andrea Hallin, Junosuando
+Leia Bark, Flyksnäs
+Rickard Källman, Ronneby
+Thelma Sunesson, Bräcke
+Nikki Landström, Ryd
+Eira Ivarsson, Nyhammar
+Noor Hallberg, Jäderfors
+Severin Holmlund, Hara
+Erza Dahlén, Bor
+Svante Hammarberg, Hoting
+Rawan Vallgren, Getinge
+Amna Strid, Aröd och Timmervik
+Lillie Gren, Säter
+Markus Wendel, Kvicksund
+Fatima Rask, Robertsholm
+Hugo Stoltz, Angered
+Hillevi Svensk, Korsberga
+Fiona Birgersson, Töcksfors
+Wilja Almgren, Olofström
+Justus Thelin, Linderöd
+Dag Damberg, Hillerstorp
+Lorin Wall, Vellinge
+Wendela Algotsson, Enköping
+Jessie Fernström, Kjulaås
+Rania Borg, Mjönäs
+Teo Stenström, Borgholm
+Alexia Mörk, Björkvik
+Valfrid Hultqvist, Uddeholm
+Zeinab Wahlberg, Klädesholmen
+Jana Olsén, Myresjö
+Gert Engberg, Hittarp
+Liam Fagerberg, Mjällom
+Minnah Franzén, Ryd
+Jana Olausson, Österfärnebo
+Tore Nylén, Obbola
+Jörgen Sturesson, Vretstorp
+Dilan Vestergren, Jönköping
+Esra Holmstedt, Oxhalsö
+Mirjam Lundstedt, Skede
+Dilan Sjöholm, Ryd
+Aaron Hagberg, Lövstalöt
+Elin Danielsson, Gånghester
+Marvin Norling, Hallstavik
+Chloe Zackrisson, Gnesta
+Camilla Ekberg, Sövde
+Rahma Sundelin, Danmark
+Manne Hallman, Parksidan
+Sixten Meijer, Hakkas
+Meya Ahlberg, Funäsdalen
+Emmelie Kvist, Ekskogen
+Arthur Öhrn, Fristad
+Severin Hedman, Hishult
+Grim Kempe, Vallvik
+Joy Strömgren, Malmbäck
+Lova Lundquist, Leksand
+Daniel Filipsson, Åled
+Emil Schmidt, Jönköping
+Louise Lindroth, Skutskär
+Lovisa Carlström, Himle
+Thelma Mattiasson, Gullringen
+Zahra Hällström, Björsäter
+Filippa Kroon, Storholmen
+Stina Örn, Gladö kvarn
+Melissa Wickström, Källö-Knippla
+Novalee Sjöstrand, Filipstad
+Tintin Bergmark, Bergagård
+Nellie Gunnarsson, Slite norra
+Indra Sörensson, Killeberg
+Maryam Carlson, Onsala
+Telma Bondesson, Fagerfjäll
+Maria Grip, Köping
+Frej Asplund, Östorp och Ådran
+Fanny Hemmingsson, Nässjö
+Ofelia Sandell, Mehedeby
+Amelia Hall, Älvängen
+Atle Granberg, Örebro
+Amelie Nordlund, Avan
+Volmar Wiberg, Båtskärsnäs
+Freja Fahlén, Ramstalund
+Adnan Lilja, Ånge
+Whilma Bergendahl, Rabbalshede
+Ingemund Edvinsson, Rydsnäs
+Jill Edlund, Timmernabben
+Iris Rönnberg, Degeberga
+Jonna Östlund, Ulvåker
+Amos Malmqvist, Vallåkra
+[36m===============
+Format: <firstname> <lastname>, <city>
+Rows: 100 (100)
+Extra: No extra.
+The last 5 should be: Ingemund, Jill, Iris, Jonna, Amos
+(B[0mView script? [y/N] 
+[abra19] Check awk exercise 3.awk 
+Charlotta Forsström, Norra Ingaröstrand
+Emin Wik, Krokom
+Adriana Rosell, Näsåker
+Emilija Frisk, Nälden
+Mirella Sjödahl, Rävemåla
+Nour Nordlander, Ingelstad
+Agaton Hammarström, Norsholm
+Dania Fritz, Svartudden
+Madelen Ekholm, Almunge
+[36m===============
+Format: <firstname> <lastname>, <city>
+Rows: 9 (9)
+Extra: No extra.
+The last 5 should be: Mirella, Nour, Agaton, Dania, Madelen
+(B[0mView script? [y/N] 
+[abra19] Check awk exercise 4.awk 
+Förnamn  	Efternamn	Telefonnummer
+---------------------------------------------
+Salma     	Helin     	 555674792
+Sanna     	Wahlgren  	 555493393
+Anni      	Örn      	 555408537
+Thilda    	Brandt    	 555197921
+Alexis    	Sjödin   	 555190611
+Madicken  	Berg      	 555003849
+Ingemar   	Kihlström	 555362185
+Patricia  	Sjöö    	 555346110
+Anton     	Johnson   	 555860051
+Rosanna   	Sjösten  	 555397557
+Roland    	Wennerström	 555568867
+Zacharias 	Ferm      	 555802398
+Camilla   	Mikaelsson	 555208336
+Carla     	Nordstrand	 555635630
+Andrea    	Hallin    	 555148969
+Leia      	Bark      	 555338093
+Rickard   	Källman  	 555221364
+Thelma    	Sunesson  	 555795390
+Nikki     	Landström	 555699394
+Eira      	Ivarsson  	 555371347
+Noor      	Hallberg  	 555929555
+Severin   	Holmlund  	 555551159
+Erza      	Dahlén   	 555417739
+Svante    	Hammarberg	 555671898
+Rawan     	Vallgren  	 555630933
+Amna      	Strid     	 555560661
+Lillie    	Gren      	 555776667
+Markus    	Wendel    	 555858669
+Fatima    	Rask      	 555453664
+Hugo      	Stoltz    	 555912341
+Hillevi   	Svensk    	 555250110
+Fiona     	Birgersson	 555642358
+Wilja     	Almgren   	 555795936
+Justus    	Thelin    	 555066298
+Dag       	Damberg   	 555741694
+Lorin     	Wall      	 555320152
+Wendela   	Algotsson 	 555381899
+Jessie    	Fernström	 555949267
+Rania     	Borg      	 555486452
+Teo       	Stenström	 555229873
+Alexia    	Mörk     	 555517279
+Valfrid   	Hultqvist 	 555408063
+Zeinab    	Wahlberg  	 555189363
+Jana      	Olsén    	 555806112
+Gert      	Engberg   	 555670808
+Liam      	Fagerberg 	 555170107
+Minnah    	Franzén  	 555406312
+Jana      	Olausson  	 555700942
+Tore      	Nylén    	 555105591
+Jörgen   	Sturesson 	 555627914
+Dilan     	Vestergren	 555492598
+Esra      	Holmstedt 	 555877855
+Mirjam    	Lundstedt 	 555016412
+Dilan     	Sjöholm  	 555280677
+Aaron     	Hagberg   	 555633674
+Elin      	Danielsson	 555041644
+Marvin    	Norling   	 555483349
+Chloe     	Zackrisson	 555690328
+Camilla   	Ekberg    	 555789743
+Rahma     	Sundelin  	 555230852
+Manne     	Hallman   	 555221818
+Sixten    	Meijer    	 555886485
+Meya      	Ahlberg   	 555429226
+Emmelie   	Kvist     	 555927773
+Arthur    	Öhrn     	 555734644
+Severin   	Hedman    	 555297432
+Grim      	Kempe     	 555428260
+Joy       	Strömgren	 555708251
+Lova      	Lundquist 	 555050076
+Daniel    	Filipsson 	 555715152
+Emil      	Schmidt   	 555884108
+Louise    	Lindroth  	 555247929
+Lovisa    	Carlström	 555438315
+Thelma    	Mattiasson	 555705095
+Zahra     	Hällström	 555044467
+Filippa   	Kroon     	 555157613
+Stina     	Örn      	 555622513
+Melissa   	Wickström	 555288549
+Novalee   	Sjöstrand	 555675663
+Tintin    	Bergmark  	 555224207
+Nellie    	Gunnarsson	 555053559
+Indra     	Sörensson	 555666879
+Maryam    	Carlson   	 555979350
+Telma     	Bondesson 	 555359387
+Maria     	Grip      	 555323001
+Frej      	Asplund   	 555518936
+Fanny     	Hemmingsson	 555450131
+Ofelia    	Sandell   	 555922513
+Amelia    	Hall      	 555440981
+Atle      	Granberg  	 555040487
+Amelie    	Nordlund  	 555457354
+Volmar    	Wiberg    	 555045107
+Freja     	Fahlén   	 555135679
+Adnan     	Lilja     	 555975449
+Whilma    	Bergendahl	 555280272
+Ingemund  	Edvinsson 	 555797049
+Jill      	Edlund    	 555095781
+Iris      	Rönnberg 	 555882679
+Jonna     	Östlund  	 555510957
+Amos      	Malmqvist 	 555402518
+Zeynep    	Thorsell  	 555069209
+Sigge     	Ekström  	 555566836
+Emelie    	Liljekvist	 555287082
+Gerda     	Brink     	 555428441
+Hadi      	Wickström	 555828898
+Aina      	Norlander 	 555509428
+Fredrik   	Sjöö    	 555933618
+Emmy      	Dahlman   	 555363067
+Haylie    	Palm      	 555194012
+Henric    	Leander   	 555879656
+Jennifer  	Bergh     	 555256501
+Lava      	Norlander 	 555109886
+Wiktor    	Hammarlund	 555432241
+Tara      	Valfridsson	 555614481
+Erland    	Norström 	 555005239
+Claes     	Tillman   	 555945111
+Dahlia    	Stridh    	 555936162
+Sören    	Wahlgren  	 555062610
+Manda     	Lans      	 555868063
+Natanael  	Brännström	 555321296
+Göran    	Månsson  	 555267484
+Eline     	Stenman   	 555564999
+Halvard   	Edvardsson	 555477481
+Adele     	Vidén    	 555626129
+Samuel    	Örn      	 555401112
+Jörgen   	Kristoffersson	 555893470
+Lennart   	Ryberg    	 555200617
+Tess      	Almström 	 555143527
+Emy       	Larsen    	 555870440
+Kenny     	Edström  	 555919406
+Chanelle  	Lundahl   	 555422586
+Bernhard  	Winberg   	 555816552
+Ninni     	Fast      	 555137357
+Ludwig    	Söderström	 555114277
+Noelia    	Bergdahl  	 555892697
+Enzo      	Thorsson  	 555648372
+Elmedina  	Olausson  	 555732484
+Moa       	Henriksson	 555349860
+Hilda     	Backlund  	 555564408
+Isak      	Grönberg 	 555821759
+Mio       	Gabrielsson	 555357682
+Osvald    	Wickström	 555680622
+Atle      	Brännström	 555881521
+Arvid     	Nordahl   	 555106402
+Lars      	Brändström	 555036926
+Liam      	Rönnbäck	 555301417
+Tintin    	Flink     	 555884786
+Belinda   	Nordin    	 555647753
+Sarah     	Ahlberg   	 555382432
+Leonie    	Månsson  	 555718025
+Kristina  	Åstrand  	 555450192
+Elena     	Olsén    	 555017391
+Zacharias 	Bergendahl	 555126265
+Amos      	Edgren    	 555898469
+Joakim    	Svedlund  	 555896260
+Evelin    	Bäckström	 555801333
+Agnes     	Elfström 	 555033042
+Nadin     	Hall      	 555920846
+Liam      	Bodin     	 555370055
+Izabelle  	Norberg   	 555497050
+Helga     	Lagerström	 555428874
+Bob       	Öhrn     	 555144111
+Wera      	Wiman     	 555416917
+Rawan     	Ekvall    	 555873312
+Harry     	Mattiasson	 555437377
+Mustafa   	Rosengren 	 555317318
+Laura     	Öhlin    	 555710872
+Hassan    	Welin     	 555992002
+Ester     	Haglund   	 555834112
+Erhard    	Vernersson	 555609768
+Whilma    	Burman    	 555609297
+Marina    	Wallgren  	 555917884
+Moa       	Selander  	 555282720
+Jenna     	Bernhardsson	 555157443
+Wendela   	Berggren  	 555553761
+Villemo   	Wallman   	 555644409
+Mio       	Hällgren 	 555072757
+Hassan    	Hultberg  	 555824878
+Marvin    	Sjölin   	 555182333
+Vendela   	Rosenkvist	 555642102
+Maj       	Sjöstrand	 555543972
+Salomon   	Thomasson 	 555426168
+Dima      	Renberg   	 555435284
+Elisia    	Malmborg  	 555018791
+Beatrice  	Fredin    	 555815949
+Alfons    	Näsström	 555069712
+Karla     	Björn    	 555398472
+Erik      	Nyqvist   	 555902316
+Lukas     	Lindström	 555875995
+Vidar     	Nordin    	 555324023
+Aaron     	Klaesson  	 555005729
+Hanna     	Malmkvist 	 555714672
+Nelia     	Vestin    	 555406929
+Nova-Li   	Löfdahl  	 555389030
+Rolf      	Rönn     	 555501190
+Tore      	Robertsson	 555434713
+Laura     	Ljungkvist	 555470590
+Madicken  	Bergkvist 	 555568766
+Alexandra 	Hermansson	 555062417
+Azra      	Edman     	 555699937
+Esbjörn  	Westin    	 555150038
+Avin      	Persson   	 555749905
+Susanna   	Wirén    	 555082199
+Greta     	Kjellin   	 555668905
+Christina 	Vikman    	 555882899
+Greta     	Fogelberg 	 555210486
+Arnold    	Wennberg  	 555885595
+Sumaya    	Ingvarsson	 555173286
+Minelle   	Björn    	 555173376
+Milla     	Hammarström	 555797737
+Lavin     	Öberg    	 555954419
+Eva       	Lindfors  	 555591682
+Anders    	Stoltz    	 555236417
+Jill      	Lindblad  	 555724792
+Othilia   	Thor      	 555653988
+Odin      	Kristiansson	 555369282
+Heidi     	Karlén   	 555908209
+Marielle  	Östlund  	 555569163
+Botvid    	Christensen	 555195506
+Malva     	Vikström 	 555159770
+Amina     	Hallgren  	 555692992
+Jasmina   	Rosell    	 555298440
+Alrik     	Palmqvist 	 555227019
+Joseph    	Långström	 555403172
+Denise    	Högström	 555918132
+Tor       	Liljekvist	 555743796
+Samir     	Sjökvist 	 555358604
+Caroline  	Haraldsson	 555422772
+Lars      	Bergmark  	 555544756
+Petronella	Christiansson	 555390207
+Narin     	Vesterlund	 555426363
+Andrea    	Lundbäck 	 555783289
+Scott     	Ragnarsson	 555745229
+Tibirtus  	Hjorth    	 555350304
+Elmer     	Frank     	 555143593
+Jimmy     	Helmersson	 555569281
+Örjan    	Thunberg  	 555424283
+Emy       	Vestberg  	 555313489
+Miranda   	Appelqvist	 555987819
+Havanna   	Åkesson  	 555052091
+Isadora   	Grahn     	 555623540
+Raoul     	Lindman   	 555088824
+Fannie    	Sjöstedt 	 555244082
+Maximiliam	Ahlstrand 	 555914429
+Ayla      	Grönlund 	 555450038
+Heidi     	Cederlund 	 555159169
+Sebastian 	Strömberg	 555239608
+Salomon   	Blomkvist 	 555567743
+Scott     	Rutgersson	 555599935
+Sally     	Rundberg  	 555875925
+Kristoffer	Sjöö    	 555417666
+Lily      	Lif       	 555112786
+Joline    	Fagerlund 	 555473296
+Veronika  	Stålnacke	 555598424
+Andreas   	Fahlström	 555088894
+Boris     	Sandahl   	 555337361
+Mirjam    	Norrman   	 555605307
+Elwin     	Lorentzon 	 555351202
+Maria     	Sköld    	 555022956
+Ilse      	Appelgren 	 555084937
+Josephine 	Edberg    	 555111431
+Elwin     	Ludvigsson	 555419884
+Nathalie  	Bergvall  	 555651049
+Amira     	Vennberg  	 555254353
+Meya      	Wennberg  	 555254522
+Matteus   	Blomkvist 	 555275957
+Fatma     	Gren      	 555733343
+Jonas     	Lind      	 555830497
+Sigge     	Skoglund  	 555563084
+Kasper    	Stridh    	 555621300
+Rawan     	Vigren    	 555058843
+Agnes     	Stenmark  	 555829573
+Göran    	Wallén   	 555841177
+Helena    	Nystedt   	 555011908
+Loke      	Hällgren 	 555665261
+Klara     	Bohman    	 555851140
+Styrbjörn	Jarl      	 555366004
+Caspar    	Roos      	 555923250
+Valle     	Blomgren  	 555865115
+Rut       	Österlund	 555994097
+Fanny     	Kihlström	 555042722
+Klas      	Mellberg  	 555913359
+Carmen    	Lindström	 555687964
+Lukas     	Sander    	 555947245
+Alisa     	Gradin    	 555027529
+Rune      	Hellberg  	 555184156
+Nathaniel 	Bergendahl	 555558001
+Noelia    	Englund   	 555634754
+Nikolaus  	Nyrén    	 555268314
+Charlie   	Melander  	 555445813
+Samantha  	Olsén    	 555386091
+Dana      	Rydén    	 555480534
+Erza      	Folkesson 	 555328648
+Zoe       	Westberg  	 555620445
+Savannah  	Sjölin   	 555510477
+Joanna    	Kjellström	 555815327
+Ali       	Lindroth  	 555832435
+Madelene  	Rasmusson 	 555061409
+Amadeus   	Rundqvist 	 555336250
+Anton     	Törnkvist	 555139653
+Joseph    	Leandersson	 555067414
+Melody    	Niklasson 	 555979469
+Sabina    	Antonsson 	 555608782
+Celine    	Nylén    	 555200290
+Lin       	Källgren 	 555844902
+Finn      	Lundholm  	 555400135
+Belle     	Bengtsson 	 555856769
+Clara     	Öst      	 555180762
+Deniz     	Ljungström	 555002691
+Matthias  	Lundgren  	 555957991
+Rahaf     	Fredriksson	 555425324
+Belle     	Åström  	 555308522
+Adèle    	Morén    	 555546499
+Lucas     	Robertsson	 555109204
+Ella      	Von       	 555797632
+Emina     	Kjellman  	 555477150
+Sandra    	Gillberg  	 555130627
+Enya      	Jörgensen	 555044287
+Nilo      	Widén    	 555791797
+Krister   	Lindblad  	 555599684
+Tor       	Lundbäck 	 555223603
+Valfrid   	Norling   	 555669095
+Sigurd    	Qvist     	 555945746
+Emir      	Sjöberg  	 555982347
+Ella      	Johansson 	 555140425
+Ossian    	Dahlin    	 555769514
+Joachim   	Olausson  	 555546804
+Tage      	Rosenqvist	 555727979
+Evelina   	Rydell    	 555047661
+Manfred   	Näsström	 555054854
+Alessia   	Edvardsson	 555394591
+Arthur    	Ringdahl  	 555010888
+Melek     	Bogren    	 555733382
+Vega      	Brorsson  	 555950530
+Sanja     	Appelgren 	 555186120
+Sigurd    	Sörensson	 555250641
+Ivan      	Fredin    	 555822526
+Tilda     	Ågren    	 555929817
+Liza      	Ledin     	 555190303
+Josef     	Holmqvist 	 555911403
+Michaela  	Tell      	 555039875
+Mia       	Bohman    	 555738113
+Rolf      	Åkesson  	 555197525
+Lilith    	Hedén    	 555370958
+Sonia     	Hedén    	 555176439
+Aprilia   	Cederholm 	 555423652
+Gottfrid  	Lantz     	 555411764
+Louisa    	Hellgren  	 555063979
+Liana     	Kristiansson	 555455451
+Vilhelm   	Österlund	 555119448
+Konrad    	Långström	 555496641
+Milou     	Landin    	 555552605
+Viking    	Vilhelmsson	 555562302
+Emeli     	Sterner   	 555670979
+Malte     	Back      	 555530480
+Aylin     	Halvarsson	 555704653
+Nova-Li   	Lundholm  	 555354949
+Leyla     	Öström  	 555057180
+Sabina    	Söderkvist	 555154896
+Jasper    	Dahlberg  	 555912443
+Dan       	Landin    	 555576664
+Ingvar    	Hemmingsson	 555270009
+Pauline   	Österman 	 555544876
+Reinhold  	Stefansson	 555897511
+Abbe      	Bohlin    	 555391561
+Sophie    	Ahlgren   	 555335124
+Gottfrid  	Brundin   	 555183264
+Nanna     	Ragnarsson	 555899120
+Pål      	Jarl      	 555301032
+Teresia   	Högman   	 555582171
+Lorena    	Månsson  	 555606294
+Caspar    	Norling   	 555134683
+Georg     	Thuresson 	 555267390
+Aston     	Oscarsson 	 555693467
+Helmer    	Lindberg  	 555756035
+Idun      	Wallberg  	 555155236
+Chloe     	Söderlund	 555482925
+Veronica  	Sörman   	 555923973
+Emilija   	Almgren   	 555471220
+Luna      	Edberg    	 555854203
+Ingemar   	Nyman     	 555227102
+Nadia     	Hedström 	 555416520
+Edvard    	Enqvist   	 555515759
+Knut      	Nylén    	 555885866
+Staffan   	Lif       	 555853895
+Herman    	Sunesson  	 555434505
+Åsa      	Holmlund  	 555001779
+Douglas   	Bengtsson 	 555641588
+Tino      	Evertsson 	 555606190
+Karolina  	Blomqvist 	 555862521
+Sivert    	Kvarnström	 555325403
+Evald     	Jakobsson 	 555565468
+Sara      	Sander    	 555501143
+Arwen     	Mattsson  	 555988771
+Henning   	Söderman 	 555614764
+Edit      	Thorén   	 555662961
+Oskar     	Lif       	 555417997
+Smilla    	Björn    	 555252441
+Lykke     	Ersson    	 555990532
+Denniz    	Zetterlund	 555064616
+Savannah  	Kroon     	 555481285
+Linus     	Hedman    	 555724491
+Karim     	Bergvall  	 555804544
+Vidar     	Lovén    	 555200555
+Angelica  	Hultman   	 555488654
+Set       	Holmén   	 555335171
+Hailie    	Zander    	 555905082
+Betty     	Östberg  	 555529564
+Gottfrid  	Lagerqvist	 555008832
+River     	Olausson  	 555974510
+Molly     	Stål     	 555694804
+Anja      	Bolin     	 555860137
+Roxanna   	Fridlund  	 555967811
+Jolina    	Söderlund	 555616376
+Aram      	Björck   	 555429634
+Ruben     	Blomdahl  	 555912100
+Manfred   	Hedblom   	 555189548
+Åsa      	Hansson   	 555742485
+Alvar     	Gillberg  	 555649903
+Elna      	Blomgren  	 555264936
+Anas      	Tillman   	 555029415
+Ronny     	Berglund  	 555985443
+Emina     	Wallgren  	 555964465
+Natali    	Hilmersson	 555817825
+Lydia     	Stenman   	 555485327
+Lou       	Nyström  	 555080121
+Blenda    	Hellberg  	 555083259
+Leo       	Kling     	 555534961
+Emmelie   	Einarsson 	 555746826
+Linda     	Schröder 	 555552211
+Nemi      	Jernberg  	 555881425
+Noak      	Davidsson 	 555908426
+Tora      	Björkman 	 555930976
+Christopher	Svenningsson	 555979111
+Wendela   	Rundberg  	 555239375
+Tanja     	Eskilsson 	 555863942
+Tina      	Hamrin    	 555938006
+Deniz     	Ekman     	 555433013
+Theodore  	Fritz     	 555409718
+Vanna     	Kihlberg  	 555446019
+Anselm    	Glans     	 555863111
+Luka      	Göransson	 555172145
+Fatma     	Harrysson 	 555623825
+Leon      	Åkerberg 	 555208757
+Hilding   	Samuelsson	 555903675
+Ingrid    	Oskarsson 	 555143307
+Elmedina  	Sandberg  	 555476218
+James     	Sjölin   	 555687257
+Amina     	Olausson  	 555730839
+Ibrahim   	Cederberg 	 555868022
+Lorin     	Ståhl    	 555836039
+Heidi     	Sjöö    	 555773005
+Ruth      	Dahlström	 555591581
+Dilan     	Kjellgren 	 555008067
+Benin     	Forsgren  	 555329946
+Roger     	Back      	 555640523
+Elwira    	Thor      	 555380286
+Linnea    	Hultqvist 	 555832637
+Rayan     	Appelqvist	 555479376
+Brian     	Ahlberg   	 555515762
+Alve      	Torstensson	 555970919
+Mats      	Schmidt   	 555992950
+Hana      	Kjellgren 	 555012917
+Miro      	Enqvist   	 555138813
+Lars      	Söderlund	 555785968
+Jens      	Oskarsson 	 555370675
+Ofelia    	Gran      	 555555224
+Brynolf   	Rasmussen 	 555832029
+Vidar     	Gustavsson	 555501571
+Belinda   	Rönnberg 	 555289064
+Emely     	Blomdahl  	 555632837
+Zelda     	Granström	 555543288
+Ebba      	Ryd       	 555276632
+Vendela   	Carlsson  	 555764837
+Miro      	Åslund   	 555996463
+Alisa     	Hägg     	 555185257
+Samira    	Hård     	 555293390
+Maksim    	Sten      	 555113521
+Agnes     	Granath   	 555460006
+Willy     	Lindmark  	 555466261
+Gottfrid  	Öqvist   	 555480247
+Noah      	Sandell   	 555814159
+Hillevi   	Hallgren  	 555744429
+Lorin     	Skoog     	 555902615
+Hailey    	Wedin     	 555209843
+Lillemor  	Wikman    	 555877916
+Hjalmar   	Göransson	 555086507
+Hemming   	Kjellström	 555579516
+Judit     	Rönn     	 555021653
+Claes     	Krantz    	 555459713
+Eila      	Sjökvist 	 555308146
+Ajla      	Enqvist   	 555423959
+Marlon    	Ålund    	 555502610
+Isadora   	Carlén   	 555631307
+Emmi      	Holmlund  	 555097489
+Bertil    	Åhman    	 555241341
+Sonia     	Edström  	 555506474
+Beata     	Helgesson 	 555484204
+Celia     	Sandahl   	 555633979
+Junia     	Brodén   	 555102054
+Esaias    	Falk      	 555437567
+Evin      	Holmström	 555284822
+Chanel    	Bratt     	 555372384
+Jessika   	Niemi     	 555407977
+Cindy     	Bergqvist 	 555215426
+Helen     	Lövgren  	 555527170
+Charlotta 	Forsström	 555297436
+Emin      	Wik       	 555638114
+Adriana   	Rosell    	 555510675
+Emilija   	Frisk     	 555837129
+Mirella   	Sjödahl  	 555413064
+Nour      	Nordlander	 555395777
+Agaton    	Hammarström	 555907321
+Dania     	Fritz     	 555961285
+Madelen   	Ekholm    	 555025781
+Leija     	Ringström	 555581257
+Emilija   	Broström 	 555615650
+Isak      	Nylander  	 555846202
+Athena    	Kihlström	 555005132
+Amelia    	Frid      	 555682016
+Mostafa   	Stridh    	 555624174
+Didrik    	Bodén    	 555385403
+Liv       	Molin     	 555344814
+Nikolina  	Dahl      	 555592489
+Ivan      	Johannisson	 555542475
+Mostafa   	Sahlström	 555372369
+Amie      	Åkerlund 	 555222354
+Pär      	Sonesson  	 555913644
+Walter    	Bergström	 555603536
+Malek     	Jörgensen	 555129175
+Olof      	Holmlund  	 555003810
+Daisy     	Brandt    	 555753467
+Joachim   	Petersson 	 555346313
+Filiph    	Thörn    	 555280467
+Edith     	Almgren   	 555762449
+Ayla      	Bergstrand	 555565285
+Xander    	Svensson  	 555331777
+Elisa     	Sahlin    	 555797407
+Jacob     	Roslund   	 555827082
+Rafael    	Peterson  	 555187580
+Fredric   	Hamrin    	 555632273
+Glenn     	Krantz    	 555584970
+Bjarne    	Mattiasson	 555853176
+Niclas    	Lundahl   	 555487069
+Marlon    	Forsell   	 555063925
+Tintin    	Grönqvist	 555220252
+Ludwig    	Qvarnström	 555282355
+Tilly     	Sundgren  	 555086253
+Julie     	Lif       	 555103164
+Ingemar   	Hägg     	 555949341
+Carl      	Nylén    	 555826656
+Christofer	Sandqvist 	 555022072
+Hampus    	Kling     	 555972843
+Sebastian 	Öqvist   	 555325747
+Jolene    	Hällgren 	 555425531
+Chris     	Medin     	 555706486
+Tryggve   	Molander  	 555250391
+Doris     	Zetterström	 555140924
+Andrea    	Norling   	 555525764
+Stefan    	Rosell    	 555643337
+Sandra    	Andersen  	 555918448
+Cornelia  	Åhs      	 555561855
+Tuwa      	Ljung     	 555104325
+Ida       	Carlström	 555563597
+Dan       	Tillberg  	 555414589
+Lillemor  	Halldén  	 555224134
+Avin      	Åslund   	 555905282
+Isolde    	Hellgren  	 555826851
+Germund   	Östberg  	 555672191
+Beata     	Åkerman  	 555788237
+Natasha   	Landén   	 555607114
+Göran    	Juhlin    	 555990185
+Mika      	Mårtensson	 555882197
+Roxanna   	Jönsson  	 555572044
+Sigge     	Lönnberg 	 555505425
+Jon       	Pihl      	 555803030
+Lillian   	Lindman   	 555442797
+Tania     	Lundvall  	 555105468
+Nikolaj   	Vilhelmsson	 555311673
+Fabian    	Svensson  	 555211653
+Malek     	Lantz     	 555625308
+Adriana   	Sjölund  	 555992728
+Juliette  	Bergström	 555038102
+Kalle     	Andersson 	 555692769
+Alf       	Dahlqvist 	 555371749
+Kendra    	Bergendahl	 555891538
+Karla     	Rosenberg 	 555773491
+Sanna     	Wallman   	 555007738
+Rebecca   	Ehn       	 555883748
+Embla     	Boman     	 555293163
+Tea       	Kristiansson	 555548339
+Johnny    	Törnblom 	 555360524
+Elena     	Mellberg  	 555891968
+Thor      	Hedström 	 555792345
+Kayla     	Holmstedt 	 555441362
+Samuel    	Örn      	 555496269
+Kajsa     	Bäck     	 555549993
+Hassan    	Vahlberg  	 555855984
+Idun      	Forss     	 555632751
+Adèle    	Boström  	 555119939
+Alicia    	Westin    	 555210631
+Ines      	Henningsson	 555656503
+Eli       	Rodin     	 555583576
+Leopold   	Sundén   	 555960760
+Stephanie 	Kristoffersson	 555034947
+Sabrina   	Wickman   	 555144374
+Maximillian	Törnkvist	 555494629
+Christopher	Leijon    	 555003667
+Cornelius 	Hellman   	 555683189
+Emilia    	Nyman     	 555987209
+Gabriel   	Sörensen 	 555712003
+Helin     	Westerlund	 555570171
+Destiny   	Ahlberg   	 555124736
+Dina      	Westin    	 555978824
+Esma      	Wirén    	 555635793
+Natanael  	Kihlberg  	 555875092
+Zahraa    	Lindman   	 555066199
+Eila      	Zackrisson	 555852413
+Edwin     	Häggström	 555365500
+Isolde    	Sterner   	 555825116
+Carolina  	Hultman   	 555778653
+Jasmina   	Sundman   	 555488132
+Joar      	Hugosson  	 555718191
+Disa      	Bladh     	 555831518
+Edit      	Henriksson	 555346247
+Aina      	Josefsson 	 555982343
+Rosa      	Håkansson	 555179897
+Jan       	Aronsson  	 555359178
+Ayla      	Lindgren  	 555451164
+Veronika  	Åkerlund 	 555562984
+Hulda     	Lundén   	 555514639
+Harald    	Lövgren  	 555852608
+Arnulf    	Edvardsson	 555603363
+Pål      	Olausson  	 555790288
+Bartolomeus	Kjell     	 555019179
+Zeinab    	Viberg    	 555820875
+Leija     	Sahlström	 555960385
+Hanna     	Lagergren 	 555296545
+Milly     	Hedqvist  	 555237637
+Hakon     	Granath   	 555057984
+Yrsa      	Engberg   	 555384851
+Berfin    	Gren      	 555139013
+Tina      	Kruse     	 555170338
+Sara      	Blomdahl  	 555166786
+Nikki     	Lindblad  	 555712431
+Cornelius 	Sundberg  	 555717815
+Ina       	Sander    	 555735577
+Fanny     	Kraft     	 555991620
+Alexis    	Larsson   	 555244546
+Julie     	Tillman   	 555262622
+Jonas     	Fagerberg 	 555003697
+Erik      	Lönn     	 555383158
+Kaj       	Glans     	 555464967
+Kaspar    	Sköld    	 555700186
+Edvin     	Källberg 	 555550386
+Ellis     	Granath   	 555074800
+Douglas   	Nyman     	 555106846
+Alida     	Edström  	 555248874
+Noelia    	Wallén   	 555206066
+Liva      	Sjödin   	 555792380
+Östen    	Johannesson	 555941704
+Miran     	Östman   	 555789173
+Majken    	Rehn      	 555456206
+Carmen    	Wahlqvist 	 555390428
+Tamara    	Blomberg  	 555237805
+Alisa     	Wallman   	 555333295
+Kristina  	Christensen	 555557585
+Ricky     	Frid      	 555098224
+Angelika  	Vikström 	 555968036
+Sven      	Malm      	 555019102
+Kian      	Bohlin    	 555944528
+Krister   	Fröberg  	 555097593
+Judith    	Abrahamsson	 555564297
+Charlie   	Mellgren  	 555448858
+Andreas   	Adamsson  	 555736248
+Lillemor  	Ludvigsson	 555518290
+Roland    	Thelin    	 555355486
+Arnulf    	Hellström	 555676684
+Tore      	Östling  	 555725210
+Philip    	Selberg   	 555020054
+Andreas   	Grönlund 	 555221467
+Nils      	Dahlström	 555704255
+Gudmar    	Helander  	 555727911
+Fredrik   	Bohman    	 555775751
+Seth      	Trygg     	 555584786
+Alex      	Schröder 	 555382514
+Blanka    	Hedén    	 555778831
+Nejla     	Thuresson 	 555693240
+Holger    	Sahlström	 555149632
+River     	Ahl       	 555591057
+Ilma      	Thörn    	 555130610
+Mats      	Wennerström	 555661928
+Tibirtus  	Edvinsson 	 555417514
+Liana     	Karlsson  	 555242307
+Nick      	Wallberg  	 555314673
+Elisia    	Kämpe    	 555036596
+Titus     	Vikberg   	 555783606
+My        	Kron      	 555109628
+Valle     	Linder    	 555426679
+Vendela   	Ericsson  	 555242017
+Matilde   	Linde     	 555816825
+Ronny     	Ljungberg 	 555065078
+Lina      	Åstrand  	 555278946
+Nicolai   	Wennerberg	 555460697
+Allie     	Käck     	 555995900
+Vendela   	Rydström 	 555040359
+Lana      	Sjödahl  	 555447176
+Henric    	Ragnarsson	 555339585
+Conrad    	Klang     	 555640320
+Loa       	Lagergren 	 555822331
+Stellan   	Friberg   	 555167827
+Nelly     	Klaesson  	 555802109
+Joline    	Olsen     	 555678013
+Alrik     	Hammarlund	 555860490
+Torvald   	Hällgren 	 555859781
+Nadine    	Petersen  	 555904781
+Lex       	Hjort     	 555369644
+Marta     	Hagberg   	 555229597
+Matteo    	Lif       	 555603721
+Valeria   	Westergren	 555799831
+Amos      	Sterner   	 555771650
+Leila     	Björnberg	 555062219
+Ellie     	Söderberg	 555708888
+Celia     	Bergkvist 	 555865447
+Maximus   	Vahlberg  	 555612856
+Azra      	Linde     	 555580068
+Alma      	Kron      	 555859991
+Leon      	Lindmark  	 555396915
+Nicolas   	Johannesson	 555908752
+Uma       	Sjögren  	 555055159
+Agaton    	Van       	 555676344
+Vilda     	Filipsson 	 555894218
+Atle      	Sigfridsson	 555119690
+Muhammad  	Björling 	 555031546
+Emre      	Hjorth    	 555242075
+Lucas     	Schröder 	 555248787
+Patricia  	Almgren   	 555686775
+Seth      	Hamrin    	 555791312
+Blanka    	Ringdahl  	 555671291
+Gry       	Ulander   	 555100884
+Harry     	Schröder 	 555535016
+Ture      	Erlandsson	 555714832
+Manfred   	Malmros   	 555601161
+Leon      	Westberg  	 555124878
+Rojin     	Glans     	 555737889
+Telma     	Björn    	 555773501
+Sienna    	Niemi     	 555991429
+Elma      	Westlund  	 555266901
+Milton    	Carlberg  	 555250099
+David     	Hallman   	 555354788
+Greger    	Seger     	 555337378
+Ove       	Norberg   	 555256361
+Joel      	Törnkvist	 555702265
+Agaton    	Hellberg  	 555900247
+Rosa      	Vennberg  	 555788674
+Alma      	Edin      	 555614347
+Thilda    	Sörensson	 555205143
+Hector    	Renberg   	 555347119
+Olga      	Bergkvist 	 555808246
+Reinhold  	Svanberg  	 555820620
+Miliam    	Falck     	 555907390
+Amelie    	Halldén  	 555199479
+Cleo      	Gerdin    	 555732367
+Lavin     	Jarl      	 555441552
+Ernst     	Lidberg   	 555598376
+Adina     	Nelson    	 555580931
+Lillie    	Einarsson 	 555511052
+Winston   	Beckman   	 555188330
+Elias     	Enström  	 555641374
+Nelly     	Brännström	 555216547
+Marielle  	Esbjörnsson	 555554204
+Amie      	Vikström 	 555971211
+Amelie    	Sahlström	 555696534
+Sumaya    	Mellgren  	 555663463
+Ted       	Sjöstedt 	 555854382
+Colin     	Jarl      	 555227517
+Alvin     	Gabrielsson	 555172761
+Roy       	Grönlund 	 555101133
+Olaus     	Fält     	 555830694
+Johannes  	Sundström	 555752047
+Amos      	Ljung     	 555096008
+Isabelle  	Vesterberg	 555977882
+Elvis     	Andrén   	 555845340
+Waldemar  	Selberg   	 555031846
+Brynolf   	Fredin    	 555469157
+Mia       	Sjöö    	 555393059
+Kjell     	Ahlin     	 555765661
+Eskil     	Wallén   	 555327029
+Bjarne    	Rosenberg 	 555188130
+Ally      	Fast      	 555127005
+Emilija   	Bodin     	 555422813
+Amel      	Nielsen   	 555862755
+Kristin   	Engvall   	 555443724
+Adriano   	Fröjd    	 555927825
+Alrik     	Ström    	 555531797
+Filiph    	Hägg     	 555388394
+Angela    	Flink     	 555846533
+Sakarias  	Engström 	 555011372
+Elliot    	Vikman    	 555765546
+Romeo     	Westling  	 555792936
+Selina    	Rosendahl 	 555022550
+Lennox    	Tjernström	 555661999
+Nemi      	Svedberg  	 555925974
+Veronika  	Sandgren  	 555586670
+Juni      	Åhlén   	 555234074
+Lowa      	Källman  	 555014819
+Towa      	Ahl       	 555656952
+Bertil    	Lagerström	 555093247
+Malek     	Morén    	 555499438
+Ella      	Jansson   	 555931155
+Kim       	Albertsson	 555472052
+Hillevi   	Bogren    	 555063317
+Esbjörn  	Vestling  	 555785310
+Niki      	Melin     	 555025765
+Liana     	Rosenkvist	 555827347
+Isabell   	Edgren    	 555833576
+Gabriella 	Sundelin  	 555155482
+Björn    	Vallin    	 555178479
+Lisen     	Rosén    	 555599773
+Amy       	Boberg    	 555310215
+Elsie     	Sandgren  	 555026789
+Thelise   	Sandqvist 	 555050833
+Samantha  	Lindén   	 555308711
+Arve      	Petersson 	 555934093
+Theodore  	Stenqvist 	 555541539
+Kristin   	Sjölin   	 555322010
+Hanan     	Staaf     	 555573533
+Miley     	Rosander  	 555608872
+Dilara    	Sahlin    	 555886129
+Annie     	Lindblad  	 555643859
+Hoda      	Berglund  	 555926055
+Marika    	Sjöberg  	 555349663
+Isadora   	Ålund    	 555521384
+Jana      	Haraldsson	 555827851
+Zanna     	Sjöstedt 	 555338333
+My        	André    	 555646178
+Melvin    	Sundkvist 	 555649230
+Samira    	Hultman   	 555187358
+Veronika  	Robertsson	 555205587
+Jessie    	Hjelm     	 555354689
+Romeo     	Fritz     	 555746134
+Thilde    	Vernersson	 555010176
+Sakarias  	Sjögren  	 555577018
+Kevin     	Elg       	 555438556
+Magnus    	Nordh     	 555876311
+Ängla    	Selberg   	 555149425
+Elna      	Helander  	 555467428
+Elise     	Wallman   	 555846573
+Wilma     	Vikman    	 555164393
+Frej      	Östergren	 555812854
+Gabrielle 	Löfstedt 	 555757699
+Aisha     	Vestman   	 555466710
+Emre      	Rönnberg 	 555882799
+Abdullah  	Häggström	 555384859
+Marion    	Mårtensson	 555712811
+Ema       	Levin     	 555025435
+Ted       	Isaksson  	 555468816
+Noa       	Henning   	 555791088
+Pär      	Bark      	 555242789
+Philippa  	Isaksson  	 555339456
+Angelina  	Malmkvist 	 555227577
+Emilie    	Sörensen 	 555215076
+Cornelius 	Håkansson	 555203516
+Joseph    	Andersen  	 555180567
+Thilde    	Fält     	 555453677
+Donia     	Hedström 	 555523441
+Valeria   	Andersson 	 555131989
+Ninja     	Sjödin   	 555857579
+Kimberly  	Zetterberg	 555985251
+Muhammed  	Norberg   	 555351849
+Nikolaj   	Norrman   	 555047129
+Nathanael 	Blomkvist 	 555297822
+Nelli     	Christensen	 555369757
+Unni      	Molander  	 555711682
+Daniel    	Kjellin   	 555059879
+Celina    	Asp       	 555514699
+Natali    	Flodin    	 555699723
+Jonas     	Hedberg   	 555810379
+Sigge     	Ljungberg 	 555363264
+Julie     	Lundkvist 	 555024012
+Brian     	Landén   	 555469349
+Christine 	Brundin   	 555362357
+Rut       	Burman    	 555607632
+Flora     	Nyrén    	 555449610
+Mustafa   	Nykvist   	 555162735
+Ida       	Gren      	 555189504
+Yasmine   	Henningsson	 555619809
+Angelina  	Sundell   	 555162035
+Jim       	Nordstrand	 555287940
+Felicia   	Wennström	 555220929
+Juli      	Hamrin    	 555609124
+Joanna    	Jonsson   	 555690641
+Norah     	Bergsten  	 555205659
+Dilara    	Modig     	 555245179
+Teresia   	Thorsson  	 555424652
+Noa       	Stenvall  	 555535162
+Ester     	Ehn       	 555805641
+Sixten    	Högström	 555077483
+Elise     	Olausson  	 555871100
+Ilse      	Lager     	 555719423
+Zandra    	Säfström	 555896671
+Filippa   	Malmström	 555155514
+Sanna     	Lindman   	 555819316
+Haley     	Wallman   	 555306298
+Marvin    	Bergqvist 	 555723084
+Bodil     	Carlson   	 555238469
+Gabrielle 	Hellsten  	 555609896
+Rahaf     	Meijer    	 555630519
+Vilda     	Zachrisson	 555767404
+Terese    	Norrman   	 555093838
+Blanka    	Fredin    	 555132844
+Joseph    	Bogren    	 555714237
+Jessika   	Edberg    	 555011283
+Fanny     	Stolt     	 555139254
+Håkan    	Nordstrand	 555868712
+David     	Lager     	 555990171
+Nanna     	Mossberg  	 555209779
+Mimmi     	Roos      	 555825808
+Arne      	Arnesson  	 555881016
+Milia     	Adamsson  	 555409361
+Nils      	Hägglund 	 555866999
+Millie    	Hjelm     	 555472118
+Haley     	Liljedahl 	 555501723
+Carla     	Johnsson  	 555590510
+Therese   	Rosander  	 555890995
+Egil      	Lindmark  	 555294835
+Ajla      	Carlström	 555680046
+Erica     	Hellman   	 555776900
+Meija     	Ask       	 555084723
+Ragnar    	Bäck     	 555055455
+Helga     	Hörberg  	 555330873
+Dennis    	Vikström 	 555706380
+Karolina  	Backlund  	 555434033
+Marta     	Rosander  	 555230343
+Elisia    	Hellberg  	 555424957
+Mimmi     	Frick     	 555898361
+Rosanna   	Stark     	 555364765
+Leya      	Lundström	 555345829
+Izabell   	Adolfsson 	 555618879
+Hadi      	Nordvall  	 555762230
+Ville     	Müller   	 555545301
+Malcolm   	Ros       	 555713238
+Gösta    	Källström	 555184687
+Lea       	Lindstedt 	 555637554
+Vilhelmina	Hellman   	 555246295
+Lorentz   	Ljungdahl 	 555783781
+Alma      	Modin     	 555863555
+Alida     	Steen     	 555731306
+Lucia     	Krantz    	 555135827
+Börje    	Helmersson	 555377691
+Jimmie    	Rosberg   	 555468133
+Sigge     	Vestling  	 555830477
+Fritz     	Liljekvist	 555377229
+Roxanna   	Stålberg 	 555596023
+Matthias  	Kruse     	 555106946
+Sandy     	Hellberg  	 555835035
+Israel    	Staaf     	 555413852
+Estelle   	Ask       	 555708008
+Noa       	Thunberg  	 555285161
+Miran     	Näslund  	 555430212
+Cindy     	Stefansson	 555512301
+Joni      	Söderholm	 555159242
+Evelin    	Rosvall   	 555069898
+Elli      	Lans      	 555985111
+Kira      	Rasmussen 	 555590751
+Rayan     	Johansen  	 555431042
+Vera      	Hellberg  	 555990375
+Kalle     	Gradin    	 555126289
+Alvar     	Knutsson  	 555629797
+Freyja    	Nygren    	 555464549
+Carolina  	Forsmark  	 555697098
+Valencia  	Hedvall   	 555567326
+Sanna     	Petersson 	 555745901
+Morgan    	Bohlin    	 555694650
+Hoda      	Sundén   	 555284634
+Alexsandra	Lindén   	 555487148
+Lowa      	Zetterlund	 555051284
+Botvid    	Berglund  	 555103716
+Manuel    	Rosberg   	 555160765
+Donya     	Wihlborg  	 555567658
+Morgan    	Lagerström	 555459169
+Kiara     	Berggren  	 555691553
+Noak      	Lidman    	 555272746
+Vilja     	Nordstrand	 555305309
+Maryam    	Hjort     	 555616899
+Lycka     	Ljungström	 555164952
+Zara      	Sigfridsson	 555685751
+Stina     	Rahm      	 555187160
+Svante    	Ramberg   	 555995896
+Lex       	Modin     	 555061546
+Danny     	Åhlander 	 555113806
+Isabel    	Berglin   	 555559558
+Ingemar   	Sandell   	 555646916
+Joseph    	Björling 	 555667137
+Linnea    	Nordvall  	 555776486
+Dania     	Johansson 	 555763402
+Petter    	Bruhn     	 555321131
+Alvar     	Kristensson	 555673801
+Filippa   	Gidlund   	 555924576
+Jens      	Åkerström	 555494420
+--------------------------------------
+[36m===============
+Format: <firstname>    <lastname>    <phone>
+Rows: 1003 (1003)
+Extra: header, footer, TAB delimiter
+The last 5 should be: Dania, Petter, Alvar, Filippa, Jens
+(B[0mView script? [y/N] 
+[abra19] Check awk exercise 5.awk 
+Förnamn  	Efternamn 	                Stad
+----------------------------------------------------
+Indra     	Sörensson	           Killeberg
+Ester     	Haglund   	          Falkenberg
+Eva       	Lindfors  	             Varberg
+Clara     	Öst      	            Persberg
+Tage      	Rosenqvist	            Vålberg
+Pål      	Jarl      	             Norberg
+Denniz    	Zetterlund	           Hoverberg
+Lou       	Nyström  	         Gustavsberg
+Stefan    	Rosell    	     Skinnskatteberg
+Rebecca   	Ehn       	          Rosersberg
+Embla     	Boman     	Ödsmål och Åsebyberg
+Aina      	Josefsson 	            Ramsberg
+Fanny     	Kraft     	           Tällberg
+Kristina  	Christensen	        Grängesberg
+Ove       	Norberg   	          Garpenberg
+Hillevi   	Bogren    	              Taberg
+Marika    	Sjöberg  	            Anneberg
+Fanny     	Stolt     	           Tällberg
+Gösta    	Källström	          Borensberg
+----------------------------------------------------
+[36m===============
+Format: <firstname>    <lastname>    <city>
+Rows: 22 (22)
+Extra: No extra.
+The last 5 should be: Ove, Hillevi, Marika, Fanny, Gösta
+(B[0mView script? [y/N] 
+[abra19] Check awk exercise 6.awk 
+Förnamn  	Efternamn	                Stad
+----------------------------------------------------
+Savannah  	Sjölin   	   Västra Ingelstad
+Betty     	Östberg  	         Fridlevstad
+Kian      	Bohlin    	            Lyrestad
+Valencia  	Hedvall   	          Strömstad
+----------------------------------------------------
+[36m===============
+Format: <firstname>    <lastname>    <city>
+Rows: 7 (7)
+Extra: Header, footer, aligned right.
+All should be: Savannah, Betty, Kian, Valencia
+(B[0mView script? [y/N] 
+[abra19] Check awk exercise 7.awk 
+Årtal	Antal
+-------------
+2006 	   48
+2007 	   46
+2008 	   45
+2009 	   62
+1990 	   38
+1991 	   56
+1992 	   50
+1993 	   35
+1994 	   62
+1995 	   52
+1996 	   38
+1997 	   49
+1998 	   46
+1999 	   49
+2000 	   39
+2001 	   43
+2002 	   39
+2003 	   51
+2010 	   46
+2004 	   56
+2005 	   50
+-------------
+[36m===============
+Format: <year>    <amount>
+Rows: 24 (24)
+Extra: Look at the script...
+The last 5 should be: 48, 46, 45, 62, 46
+(B[0mView script? [y/N] 
+[abra19] Check awk exercise 8.awk 
+Anni Örn, 1994-07-08, 555408537
+Teo Stenström, 1994-04-29, 555229873
+Stina Örn, 2010-05-25, 555622513
+Ofelia Sandell, 1994-09-25, 555922513
+Hilda Backlund, 1996-09-08, 555564408
+Leonie Månsson, 1992-02-18, 555718025
+Laura Öhlin, 2005-10-10, 555710872
+Hassan Welin, 1998-04-20, 555992002
+Moa Selander, 1996-12-20, 555282720
+Minelle Björn, 2002-11-17, 555173376
+Alrik Palmqvist, 1996-10-22, 555227019
+Caroline Haraldsson, 1994-05-27, 555422772
+Petronella Christiansson, 1996-03-02, 555390207
+Elmer Frank, 2010-09-14, 555143593
+Heidi Cederlund, 2001-02-15, 555159169
+Mirjam Norrman, 1995-01-07, 555605307
+Elwin Lorentzon, 1999-06-02, 555351202
+Ossian Dahlin, 1991-04-14, 555769514
+Mia Bohman, 1999-10-13, 555738113
+Teresia Högman, 2003-05-17, 555582171
+Caspar Norling, 1999-12-13, 555134683
+Helmer Lindberg, 2004-02-03, 555756035
+Ruben Blomdahl, 1997-09-21, 555912100
+Tora Björkman, 1995-03-09, 555930976
+Christopher Svenningsson, 2003-12-11, 555979111
+Wendela Rundberg, 2010-03-23, 555239375
+Elmedina Sandberg, 1992-05-18, 555476218
+Marlon Ålund, 2002-01-10, 555502610
+Isadora Carlén, 2010-11-07, 555631307
+Mirella Sjödahl, 1990-11-30, 555413064
+Malek Jörgensen, 2005-12-17, 555129175
+Carl Nylén, 2009-10-26, 555826656
+Kendra Bergendahl, 2003-04-15, 555891538
+Cornelius Sundberg, 2002-12-17, 555717815
+Alexis Larsson, 2000-09-24, 555244546
+Philip Selberg, 2005-05-20, 555020054
+Nelly Klaesson, 2002-03-21, 555802109
+Uma Sjögren, 2006-11-15, 555055159
+Emre Hjorth, 1999-12-24, 555242075
+Seth Hamrin, 1998-08-12, 555791312
+Blanka Ringdahl, 2006-11-29, 555671291
+Ove Norberg, 2008-06-25, 555256361
+Winston Beckman, 1991-03-30, 555188330
+Bjarne Rosenberg, 1992-02-18, 555188130
+Isadora Ålund, 1995-07-21, 555521384
+Pär Bark, 2007-07-27, 555242789
+Nathanael Blomkvist, 2005-08-22, 555297822
+Julie Lundkvist, 2001-09-02, 555024012
+Angelina Sundell, 1998-10-20, 555162035
+Norah Bergsten, 2002-04-05, 555205659
+Ragnar Bäck, 2005-01-05, 555055455
+Kalle Gradin, 2000-05-26, 555126289
+Vilja Nordstrand, 1991-02-30, 555305309
+[36m===============
+Format: <firstname> <lastname>, <born>, <phone>
+Rows: 53 (53)
+Extra: No extra.
+The last 5 should be: Angelina, Norah, Ragnar, Kalle, Vilja
+(B[0mView script? [y/N] 
+[abra19] Check awk exercise 9.awk 
+Anni Örn, 1994-07-08, 555408537
+Teo Stenström, 1994-04-29, 555229873
+Stina Örn, 2010-05-25, 555622513
+Ofelia Sandell, 1994-09-25, 555922513
+Hilda Backlund, 1996-09-08, 555564408
+Leonie Månsson, 1992-02-18, 555718025
+Laura Öhlin, 2005-10-10, 555710872
+Hassan Welin, 1998-04-20, 555992002
+Moa Selander, 1996-12-20, 555282720
+Minelle Björn, 2002-11-17, 555173376
+Alrik Palmqvist, 1996-10-22, 555227019
+Caroline Haraldsson, 1994-05-27, 555422772
+Petronella Christiansson, 1996-03-02, 555390207
+Elmer Frank, 2010-09-14, 555143593
+Heidi Cederlund, 2001-02-15, 555159169
+Mirjam Norrman, 1995-01-07, 555605307
+Elwin Lorentzon, 1999-06-02, 555351202
+Ossian Dahlin, 1991-04-14, 555769514
+Mia Bohman, 1999-10-13, 555738113
+Teresia Högman, 2003-05-17, 555582171
+Caspar Norling, 1999-12-13, 555134683
+Helmer Lindberg, 2004-02-03, 555756035
+Ruben Blomdahl, 1997-09-21, 555912100
+Tora Björkman, 1995-03-09, 555930976
+Christopher Svenningsson, 2003-12-11, 555979111
+Wendela Rundberg, 2010-03-23, 555239375
+Elmedina Sandberg, 1992-05-18, 555476218
+Marlon Ålund, 2002-01-10, 555502610
+Isadora Carlén, 2010-11-07, 555631307
+Mirella Sjödahl, 1990-11-30, 555413064
+Malek Jörgensen, 2005-12-17, 555129175
+Carl Nylén, 2009-10-26, 555826656
+Kendra Bergendahl, 2003-04-15, 555891538
+Cornelius Sundberg, 2002-12-17, 555717815
+Alexis Larsson, 2000-09-24, 555244546
+Philip Selberg, 2005-05-20, 555020054
+Nelly Klaesson, 2002-03-21, 555802109
+Uma Sjögren, 2006-11-15, 555055159
+Emre Hjorth, 1999-12-24, 555242075
+Seth Hamrin, 1998-08-12, 555791312
+Blanka Ringdahl, 2006-11-29, 555671291
+Ove Norberg, 2008-06-25, 555256361
+Winston Beckman, 1991-03-30, 555188330
+Bjarne Rosenberg, 1992-02-18, 555188130
+Isadora Ålund, 1995-07-21, 555521384
+Pär Bark, 2007-07-27, 555242789
+Nathanael Blomkvist, 2005-08-22, 555297822
+Julie Lundkvist, 2001-09-02, 555024012
+Angelina Sundell, 1998-10-20, 555162035
+Norah Bergsten, 2002-04-05, 555205659
+Ragnar Bäck, 2005-01-05, 555055455
+Kalle Gradin, 2000-05-26, 555126289
+Vilja Nordstrand, 1991-02-30, 555305309
+---------------------------------
+26 stycken är födda innan år 2000.
+[36m===============
+Format: <firstname> <lastname>, <born>, <phone>
+Rows: 55 (55)
+Extra: No extra.
+Answer should be 26.
+(B[0mView script? [y/N] 
+[0;30;42mOK[0m 20_check-awk.bash
+
+[32;01m>>> -------------- 30_check-mazerunner.bash -------------------------[0m
+[36m----- View mazerunner.bash? [Y/n] ----- 
+(B[mmore: stat of mazerunner.bash failed: No such file or directory
+[0;30;42mOK[0m 30_check-mazerunner.bash
+
+[32;01m>>> -------------- 99_lastcheck.bash    -------------------------[0m
+Do manual stuff, if needed (write e/exit to exit)?
+kmom01	kmom02	kmom03	kmom04	kmom05	kmom06	kmom10	redovisa
+root@fe38df86f606:/home/dbwebb/repo/me# ls
+kmom01	kmom02	kmom03	kmom04	kmom05	kmom06	kmom10	redovisa
+root@fe38df86f606:/home/dbwebb/repo/me# ls kmom06/
+awk/   maze2/ sed1/  
+root@fe38df86f606:/home/dbwebb/repo/me# ls kmom06/maze2/
+client	docker-compose.yml  maze  server
+root@fe38df86f606:/home/dbwebb/repo/me# ls kmom06/maze2/ [1@ [1@-[1@a[1@l
+total 24
+drwxrwxrwx 5 dbwebb dbwebb 4096 Oct 26 05:10 .
+drwxrwxrwx 5 dbwebb dbwebb 4096 Apr 14 11:42 ..
+drwxrwxrwx 2 dbwebb dbwebb 4096 Aug 22  2020 client
+-rw-r--r-- 1 dbwebb dbwebb  431 Oct 26 05:14 docker-compose.yml
+drwxr-xr-x 4 dbwebb dbwebb 4096 Oct 26 03:38 maze
+drwxrwxrwx 2 dbwebb dbwebb 4096 Aug 22  2020 server
+root@fe38df86f606:/home/dbwebb/repo/me# 

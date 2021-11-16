@@ -1,0 +1,25 @@
+version: "3"
+
+volumes:
+    mysql_data: {}
+    mariadb_data: {}
+
+services:
+    # Primary services to use with this course
+    vlinux: &vlinux
+        image: dbwebb/courserepo
+        volumes:
+            - ".:/home/dbwebb/repo"
+            - "/home/dbwebb/repo/bin"
+            - "/home/dbwebb/repo/build"
+            - "/home/dbwebb/repo/node_modules"
+            #- "/home/dbwebb/repo/vendor"
+            - "./example/sql/inspect/my.cnf:/home/dbwebb/.my.cnf"
+
+    cli:
+        <<: *vlinux
+
+    server:
+        <<: *vlinux
+        ports:
+            - "1337:1337"
