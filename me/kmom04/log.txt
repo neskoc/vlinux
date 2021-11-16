@@ -1,0 +1,40 @@
+# Docker
+
+docker images (alias: docker image ls)
+docker login
+docker ps
+docker run --rm -it debian:stretch-slim
+docker stop elegant_dhawan
+docker run f5567032a379
+docker stop f5567032a379
+
+# New Docker image
+
+touch Dockerfile
+nvim Dockerfile
+
+## kmom03
+docker build -t neskoc/vlinux-server:latest .
+docker run --rm -it neskoc/vlinux-server
+docker push neskoc/vlinux-commands:latest
+
+## kmom04
+docker build -t neskoc/vlinux-server:latest .
+docker run --rm -v /home/nesko/Dropbox/Db_dbwebb-kurser/vlinux/me/kmom04/data/:/server/data/ -p 1337:1337 -it neskoc/vlinux-server:latest
+docker push neskoc/vlinux-server:latest
+
+# removing images / containers / cleaning up
+
+## remove all stopped containers
+docker rm  $(docker ps -q -a)
+
+## remove all dangling images
+docker rmi $(docker images -f "dangling=true" -q)
+
+## remove container
+docker rm f5567032a379
+
+## remove image
+docker rmi f5567032a379
+
+docker system prune -a

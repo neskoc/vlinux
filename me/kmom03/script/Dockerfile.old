@@ -1,0 +1,20 @@
+FROM debian:stretch-slim
+
+RUN apt update && \
+    apt -y install nano \
+    cowsay \
+    fortune \
+    bsdmainutils
+
+CMD ["/bin/echo", "Hello dbwebb_v1"]
+
+ENTRYPOINT ["/bin/bash", "-c", "echo Hello dbwebb"]
+
+CMD ["dbwebb_v2"]
+
+WORKDIR scripts
+
+COPY ./commands.bash /kmom03/
+
+RUN chmod +x /kmom03/commands.bash
+RUN /kmom03/commands.bash all

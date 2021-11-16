@@ -1,0 +1,29 @@
+<!doctype html>
+<meta charset="utf-8">
+<title><%= title %></title>
+<link rel="stylesheet" href="/style/style.css">
+<link rel='shortcut icon' href='/img/linux_penguin.ico'/>
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=2.0;">
+
+<body>
+
+<header>
+    <header class="site-header">
+        <img src="/img/linux_penguin.png" hight="100" width="100" alt="logo" />
+        <span class="site-title">vlinux kmom04</span>
+        <span class="site-slogan">Non omne quod nitet aurum est.</span>
+    </header>
+    <nav class="navbar">
+        <a href="/"
+             class='<%= path === "/index" ||  path === "/" ? "selected" : "a-navbar" %>'>Index</a> |
+        <a href="/all"
+            class='<%= path === "/all" ? "selected" : "a-navbar" %>'>Alla</a>
+        <a href="/names"
+             class='<%= path === "/names" ? "selected" : "a-navbar" %>'>Namnen</a>
+        <a href="/color/Green"
+            class='<%= path === "/color" ? "selected" : "a-navbar" %>'>Färg (Green)</a>
+    </nav>
+</header>
+
+<main>
+<article  class="all-browsers">

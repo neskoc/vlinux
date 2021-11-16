@@ -1,0 +1,80 @@
+# kmom02
+
+## php-8
+
+$ sudo apt update
+$ sudo apt install -y lsb-release ca-certificates apt-transport-https software-properties-common
+$ echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/php.list
+$ wget -qO - https://packages.sury.org/php/apt.gpg | sudo apt-key add -
+$ sudo apt update
+$ sudo apt list --upgradable
+$ sudo apt upgrade
+$ sudo apt install php8.0
+$ php -v
+$ php -m
+
+## me.linux.se
+
+På den virtuella servern debian-vlinux:
+
+$ mkdir -p $HOME/vhosts/me.linux.se/htdocs
+$ sudo cp /etc/apache2/sites-available/linux.dbwebb.se.conf /etc/apache2/sites-available/me.linux.se.conf 
+$ sudo nvim /etc/apache2/sites-available/me.linux.se.conf 
+$ sudo a2ensite me.linux.se
+$ systemctl reload apache2
+
+## rsync
+
+På host os (Manjaro)
+$ cd vlinux/me/redovisa
+$ rsync -avzv -e "ssh -p 2222" ./ localhost:/home/nesko/vhosts/me.linux.se/htdocs
+opening connection using: ssh -p 2222 localhost rsync --server -vvlogDtprze.iLsfxCIvu . /home/nesko/vhosts/me.linux.se/htdocs  (9 args)
+sending incremental file list
+delta-transmission enabled
+./
+about.php
+index.html
+me.html
+me.php
+redovisning.html
+report.php
+vlinux.code-workspace
+css/
+css/old.style.css
+css/style.css
+css/style.old.css
+img/
+img/Nenad.jpg
+img/brosnan_as_bond.jpg
+img/connery-007.jpg
+img/linux-penguin.ico
+img/linux_penguin.png
+img/me-small.jpg
+img/vlinux.png
+incl/
+incl/byline.php
+incl/footer.php
+incl/header.php
+incl/navbar.php
+js/
+js/main.js
+total: matches=0  hash_hits=0  false_alarms=0 data=450787
+
+sent 321,516 bytes  received 496 bytes  644,024.00 bytes/sec
+total size is 450,787  speedup is 1.40
+
+På gäst-os (debian-vlinux):
+$ sudo nvim /etc/hosts
+127.0.0.1       localhost
+127.0.1.1       debian-vlinux
+127.0.0.1       linux.dbwebb.se
+127.0.0.1       me.linux.se
+$ lynx me.linux.se => dump.png
+
+Kopiera konfigfilen till hemmamappen för att kunna komma åt den via rsync utan att vara rooot
+$ sudo cp /etc/apache2/sites-available/me.linux.se.conf .
+$ sudo chown nesko:nesko me.linux.se.conf
+
+På host-datorn (predator)
+Kopiera över config filen till me/kmom02/vhost/
+$ rsync -avzv -e "ssh -p 2222" localhost:/home/nesko/me.linux.se.conf /home/nesko/vlinux/me/kmom02/vhost/

@@ -1,0 +1,12 @@
+<%- include("./partials/header", {title: title, path: path}); %>
+
+<h1>Alla routes</h1>
+
+<ul>
+   <li>Denna sida <a href="/">/</a></li>
+   <li>Hela JSON-filen. <a href="/all">/all</a></li>
+   <li>Namnen på alla växterna. <a href="/names">/names</a></li>
+   <li>Alla växter som kan ha "color" som färg <a href="/color/Red">/color/&lt;color&gt;</a></li>
+ </ul> 
+
+<%- include("./partials/footer"); %>

@@ -1,0 +1,62 @@
+<%- include("./partials/header", {title: title, path: path}); %>
+
+<h1>Sök i loggen</h1>
+
+<form method="post">
+    <fieldset>
+        <legend>Inget filter är obligatoriskt</legend>
+
+        <div class="filter">
+            <div class="filter-ip">
+                <label for="ip">ip-nummer</label><br>
+                <input type="text" id="ip" name="ip" maxlength="15" pattern="^([0-9]|\.)*$" value="<%= params.ip %>">
+            </div>
+            <div class="filter-url">
+                <label for="url">url</label><br>
+                <input type="text" id="url" name="url" maxlength="150" value="<%= params.url %>">
+            </div>
+            <div class="filter-month">
+                <label for="month">month</label><br>
+                <input type="text" id="month" name="month" maxlength="10" value="<%= params.month %>">
+            </div>
+            <div class="filter-day">
+                <label for="day">day</label><br>
+                <input type="number" id="day" name="day" min="1" max="31" step="1" value="<%= params.day %>">
+            </div>
+            <div class="filter-time">
+                <label for="time">time</label><br>
+                <input type="text" id="time" name="time" maxlength="8" pattern="^([0-9]{1,2})(:[0-9]{1,2}){0,2}$" value="<%= params.time %>">
+            </div>
+        </div>
+
+    </fieldset>
+    <br>
+    <input type="submit" name="filterLog" value="Filtrera">
+</form>
+
+<% if (log) { %>
+    <div class="log">
+        <table cellpadding="0" cellspacing="0">
+            <tr class="heading">
+                <th>ip-nummer</th>
+                <th>url</th>
+                <th>month</th>
+                <th>day</th>
+                <th>time</th>
+            </tr>
+            <%
+            let total = 0;
+            for (const row of log) { %>
+                <tr class="row">
+                    <td class="right"><%= row.ip %></td>
+                    <td><%= row.url %></td>
+                    <td><%= row.month %></td>
+                    <td><%= row.day %></td>
+                    <td><%= row.time %></td>
+                </tr>
+            <% }; %>
+        </table>
+    </div>
+<% }; %>
+
+<%- include("./partials/footer"); %>

@@ -1,0 +1,25 @@
+version: "3"
+
+networks:
+    kmom06_net:
+
+services:
+    server:
+        image: neskoc/vlinux-mazeserver:latest
+        container_name: "kmom06_server"
+        ports:
+            - "1337:1337"
+        networks:
+            kmom06_net:
+        restart:
+            "always"
+
+    client:
+        image: neskoc/vlinux-mazeclient:loop
+        container_name: "kmom06_client"
+        networks:
+            kmom06_net:
+        links:
+            - server:kmom06_server
+        depends_on:
+            - server

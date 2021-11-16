@@ -1,0 +1,20 @@
+<%- include("./partials/header", {title: title, path: path}); %>
+
+<h1>Alla routes</h1>
+
+<ul>
+    <li>Denna sida <a href="/">/</a></li>
+    <li>Hela JSON-filen. <a href="/data">/data</a></li>
+    <li>Visa rader som innehåller &lt;ip&gt;. <a href="/data?ip=3.249.76.98">/data?ip=&lt;ip&gt;</a></li>
+    <li>Visa rader som innehåller &lt;url&gt;. <a href="/data?ip=3.249.76.98&url=google.com">/data?url=&lt;url&gt;</a></li>
+    <li>Visa raderna från månaden &lt;month&gt; (tex ?month=Aug).
+        <a href="/data?ip=3.249.76.98&url=google.com&month=Aug">/data?month=&lt;month&gt;</a>
+    <li>Visa raderna från dagen &lt;day&gt;
+        <a href="/data?ip=3.249.76.98&url=google.com&month=Aug&day=17">/data?day=&lt;day&gt;</a>
+    <li>Visa raderna från tiden &lt;time&gt;
+        <a href="/data?ip=3.249.76.98&url=google.com&month=Aug&day=17&time=6">/data?time=&lt;time&gt;</a>
+    </li>
+    <li>... och så kan man kombinera de olika filter ovan precis som man vill</li>
+</ul> 
+
+<%- include("./partials/footer"); %>

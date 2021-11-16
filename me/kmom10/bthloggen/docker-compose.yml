@@ -1,0 +1,40 @@
+version: "3"
+
+networks:
+    kmom10_net:
+        name: kmom10_net
+
+services:
+    server:
+        image: neskoc/vlinux-kmom10:server
+        container_name: "server"
+        expose:
+            - "1337"
+        networks:
+            - kmom10_net
+        volumes:
+            - ./data:/data
+        restart:
+            "always"
+
+    webbclient:
+        image: neskoc/vlinux-kmom10:webbclient
+        container_name: "webbclient"
+        ports:
+            - "127.0.0.1:1338:8000"
+        networks:
+            - kmom10_net
+        links:
+            - server:kmom10_server
+        depends_on:
+            - server
+
+    client:
+        image: neskoc/vlinux-kmom10:client
+        container_name: "client"
+        networks:
+            - kmom10_net
+        links:
+            - server:kmom10_server
+        depends_on:
+            - server

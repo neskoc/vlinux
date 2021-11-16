@@ -1,0 +1,4 @@
+{
+    "server_base_url":   "http://server:1337/data",
+    "client_port":    "8000"
+}
